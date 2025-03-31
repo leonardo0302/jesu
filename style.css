@@ -1,0 +1,272 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Fondo para el login */
+body.login-page {
+    background-image: url("wo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Fondo para el menú principal */
+body.main-menu-page {
+    background-image: url("padulismo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px; /* Reducimos el padding para hacerlo más pequeño */
+    display: flex;
+    align-items: center;
+    height: 60px; /* Establecemos una altura fija */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; /* Reducimos el tamaño de la imagen del logo */
+    height: auto;
+    margin-right: 5px; /* Reducimos el margen derecho */
+}
+
+.logo h1 {
+    font-size: 1.2em; /* Reducimos el tamaño de la fuente del título */
+    margin: 0; /* Eliminamos el margen del título */
+}
+
+#login-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav {
+    background-color: #333;
+    border-bottom: 2px solid #555;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-container {
+    width: 80%;
+    max-width: 1200px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #111;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.social-links img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+footer:hover {
+    opacity: 0.8;
+}
+
+#login-container:hover {
+    transform: scale(1.02);
+}
+
+#login-container input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#login-container input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+#login-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#login-container button:hover {
+    background-color: #367c39;
+    transform: scale(1.05);
+}
+
+nav {
+    background-color: #333;
+    border-bottom: 2px solid #555;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-container {
+    width: 80%;
+    max-width: 1200px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #111;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.social-links img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+footer:hover {
+    opacity: 0.8;
+}
